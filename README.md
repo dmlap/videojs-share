@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/videojs/videojs-contrib-hls.png)](https://travis-ci.org/videojs/videojs-contrib-hls)
-
 # VideoJS Share Screen Plugin
 
 A video.js plugin that allows a configurable share screen during playback.
