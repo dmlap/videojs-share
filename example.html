@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Share Screen Example</title>
+
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="src/css/vjs-share-overlay.css" rel="stylesheet">
+
+	<!-- Video.JS -->
+	<link href="//vjs.zencdn.net/4.5/video-js.css" rel="stylesheet">
+	<script src="//vjs.zencdn.net/4.5/video.js"></script>
+
+	<!-- Share Plugin -->
+	<script	src="src/js/videojs-share.js"></script>
+	<script src="src/js/ui/share-overlay.js"></script>
+	<script src="src/js/ui/share-control-bar-button.js"></script>
+
+	<!-- Set the location of the flash SWF -->
+	<script>
+		videojs.options.flash.swf = 'node_modules/video.js/dist/video-js/video-js.swf'
+	</script>
+</head>
+<body>
+	<video id="video" class="video-js vjs-default-skin" controls preload="auto"
+	       width="960" height="540"
+	       poster="src/img/poster.jpg"
+	       data-setup='{}'>
+	<source src="http://media11.traileraddict.com/i_am_hardwell-hd.mp4?8b4c33b911618ed7466247e6cfe20c297e3e7ce8000e" type='video/mp4'>
+	</video>
+	<script>
+		// initialize the player
+		var player = videojs('video');
+		// initialize the plugin
+		player.share({title: "I Am Hardwell", directLink:'http://www.mixxture.com/users/hardwell/events/bv331ea094812s352'});
+	</script>
+</body>
+</html>

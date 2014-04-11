@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(../fonts/sourcesanspro-extra-light-v5.woff) format('woff');
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(../fonts/sourcesanspro-semi-bold-v5.woff) format('woff');
+}
+.vjs-share-control                                  {cursor: pointer; width:40px; height: 25px; float: right; text-align: center; padding-top: 5px}
+.vjs-share-control i                                {margin-top: 10px}
+.vjs-share-overlay                                  {margin: 0px 0px 0px 0px; background: rgba(0,0,0,0.75); width: 100%; height: 100%; position: absolute; top: 0px; left: 0px}
+.vjs-share-options-container                        {margin: -130px 0 0 -220px; padding:0px; top: 50%; left: 50%; position: absolute; height: 260px; width: 440px}
+.vjs-share-options-container-close-icon             {position: absolute; display: block; top: 10px; right:10px; cursor: pointer}
+.vjs-share-options-container-asset-title            {margin: 0px 0px 0px 0px;  padding: 0px; width: 440px; height: 18px; font-family: 'Source Sans Pro', sans-serif; font-weight: 600; font-size: 18px; color: #ffffff; overflow: hidden}
+.vjs-share-options-container-section-title          {margin: 0px 0px 5px 0px;  padding: 0px; font-family: 'Source Sans Pro', sans-serif; font-weight: 600; font-size: 13px; color: #ffffff}
+.vjs-share-options-container-social-container       {margin: 20px 0px 0px 0px; padding: 0px; width: 280px; height: 55px}
+.vjs-share-options-container-social-icon-container  {margin: 0px 0px 10px 0px; padding: 0px 0px 0px 0px; height: 37px}
+.vjs-share-options-container-social-icon            {color: #ffffff; cursor: pointer}
+.vjs-share-options-container-social-icon-fb         {margin: 0px 5px 0px 0px; padding: 0px 0px 0px 0px; color: #3b5998; float: left}
+.vjs-share-options-container-social-icon-gp         {margin: 0px 5px 0px 0px; padding: 0px 0px 0px 0px; color: #de4b39; float: left}
+.vjs-share-options-container-social-icon-tw         {margin: 0px 5px 0px 0px; padding: 0px 0px 0px 0px; color: #29b2e4; float: left}
+.vjs-share-options-container-social-icon-tu         {margin: 0px 5px 0px 0px; padding: 0px 0px 0px 0px; color: #375572; float: left}
+.vjs-share-options-container-social-icon-pt         {margin: 0px 5px 0px 0px; padding: 0px 0px 0px 0px; color: #bd3339; float: left}
+.vjs-share-options-container-social-icon-in         {margin: 0px 5px 0px 0px; padding: 0px 0px 0px 0px; color: #1783bc; float: left}
+.vjs-share-options-input-row                        {margin: 0px 0px 0px 0px; padding: 0px; width: 440px; height: 60px}
+.vjs-share-options-direct-link-container            {margin: 0px 0px 0px 0px; padding: 0px; width: 350px; height: 60px; float: left}
+.vjs-share-options-direct-link-input                {margin: 0px 0px 0px 0px; padding: 8px 0px 0px 10px; width: 340px; height: 27px; border-radius: 2px; background: #ffffff; font-family: 'Source Sans Pro', sans-serif; font-weight: 200; font-size: 13px; color: #515151; cursor: pointer}
+.vjs-share-options-start-time-container             {margin: 0px 0px 0px 10px; padding: 0px; width: 80px; height: 60px; float: left}
+.vjs-share-options-start-time-input                 {margin: 0px 0px 0px 0px; padding: 8px 0px 0px 10px; width: 70px; height: 27px; border-radius: 2px; background: #ffffff; font-family: 'Source Sans Pro', sans-serif; font-weight: 200; font-size: 13px; color: #515151; cursor: pointer}
+.vjs-share-options-embed-container                  {margin: 20px 0px 0px 0px; padding: 0px 0px 0px 0px; float: left}
+.vjs-share-options-embed-input                      {margin: 0px 0px 0px 0px; padding: 8px 0px 0px 10px; width: 430px; height: 27px; border-radius: 2px; background: #ffffff; font-family: 'Source Sans Pro', sans-serif; font-weight: 200; font-size: 13px; color: #515151; cursor: pointer}
+.vjs-share-clipboard-container-direct-link          {position: absolute; width: 350px; height: 45px; top: 135px;}
+.vjs-share-clipboard-container-embed-code           {position: absolute; width: 440px; height: 45px; top: 215px;}
+
+

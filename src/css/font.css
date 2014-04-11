@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(sourcesanspro-extra-light-v5.woff) format('woff');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(sourcesanspro-semi-bold-v5.woff) format('woff');
+}
+
+.video-js {
+  font-family: 'Source Sans Pro', sans-serif;
+}
