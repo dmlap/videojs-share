@@ -2,18 +2,11 @@
   videojs.share = {
     swf: 'src/swf/clipboard.swf',
     defaults: {
-      title: '',
+      title: 'Unknown Title',
       embedCode: 'Embed Script Here',
       directLink: 'http://to/nowhere.html',
       startTime: '00:00',
-      networks: [
-        {name: 'pinterest', url: 'http://www.pinterest.com/', backgroundClass: 'vjs-share-options-container-social-icon-pt'},
-        {name: 'facebook', url: 'http://www.facebook.com/', backgroundClass: 'vjs-share-options-container-social-icon-fb'},
-        {name: 'twitter', url: 'http://www.twitter.com/', backgroundClass: 'vjs-share-options-container-social-icon-tw'},
-        {name: 'tumblr', url: 'http://www.tumblr.com/', backgroundClass: 'vjs-share-options-container-social-icon-tu'},
-        {name: 'linkedIn', url: 'http://www.linkedin.com/', backgroundClass: 'vjs-share-options-container-social-icon-in'},
-        {name: 'google-plus', url: 'http://www.google.com/', backgroundClass: 'vjs-share-options-container-social-icon-gp'}
-      ]
+      networks: []
     }
   };
 
