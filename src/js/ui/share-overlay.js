@@ -1,5 +1,8 @@
 /* Share Overlay
  ================================================================================ */
+(function(videojs) {
+'use strict';
+
 videojs.ShareOverlay = videojs.Component.extend({
   init: function(player, options) {
 
@@ -17,53 +20,53 @@ videojs.ShareOverlay = videojs.Component.extend({
 });
 
 var createShareOverlayContainer = function() {
-  return "<div class=\"vjs-share-options-container\">" +
-      "<div class=\"vjs-share-options-container-asset-title\">Share Video:<\/div>" +
-      "<div class=\"vjs-share-options-container-social-container\">" +
-      "<div class=\"vjs-share-options-container-section-title\">Share via:<\/div>" +
-      "<div class=\"vjs-share-options-container-social-icon-container\">" +
-      "<span class=\"fa-stack fa-lg\">" +
-      "<i class=\"fa fa-square fa-2x vjs-share-options-container-social-icon-fb\"><\/i>" +
-      "<i class=\"fa fa-facebook fa-stack-1x vjs-share-options-container-social-icon\"><\/i>" +
-      "<\/span>" +
-      "<span class=\"fa-stack fa-lg\">" +
-      "<i class=\"fa fa-square fa-2x vjs-share-options-container-social-icon-gp\"><\/i>" +
-      "<i class=\"fa fa-google-plus fa-stack-1x vjs-share-options-container-social-icon\"><\/i>" +
-      "<\/span>" +
-      "<span class=\"fa-stack fa-lg\">" +
-      "<i class=\"fa fa-square fa-2x vjs-share-options-container-social-icon-tw\"><\/i>" +
-      "<i class=\"fa fa-twitter fa-stack-1x vjs-share-options-container-social-icon\"><\/i>" +
-      "<\/span>" +
-      "<span class=\"fa-stack fa-lg\">" +
-      "<i class=\"fa fa-square fa-2x vjs-share-options-container-social-icon-tu\"><\/i>" +
-      "<i class=\"fa fa-tumblr fa-stack-1x vjs-share-options-container-social-icon\"><\/i>" +
-      "<\/span>" +
-      "<span class=\"fa-stack fa-lg\">" +
-      "<i class=\"fa fa-square fa-2x vjs-share-options-container-social-icon-pt\"><\/i>" +
-      "<i class=\"fa fa-pinterest fa-stack-1x vjs-share-options-container-social-icon\"><\/i>" +
-      "<\/span>" +
-      "<span class=\"fa-stack fa-lg\">" +
-      "<i class=\"fa fa-square fa-2x vjs-share-options-container-social-icon-in\"><\/i>" +
-      "<i class=\"fa fa-linkedin fa-stack-1x vjs-share-options-container-social-icon\"><\/i>" +
-      "<\/span>" +
-      "<\/div>" +
-      "<br style=\"clear: both\">" +
-      "<div class=\"vjs-share-options-input-row\">" +
-      "<div class=\"vjs-share-options-direct-link-container\">" +
-      "<div class=\"vjs-share-options-container-section-title\">Direct Link:<\/div>" +
-      "<div class=\"vjs-share-options-direct-link-input\">Direct Link<\/div>" +
-      "<div class=\"vjs-share-clipboard-container-direct-link\"></div>" +
-      "<\/div>" +
-      "<div class=\"vjs-share-options-start-time-container\">" +
-      "<div class=\"vjs-share-options-container-section-title\">Start Time:<\/div>" +
-      "<div class=\"vjs-share-options-start-time-input\">00:00<\/div>" +
-      "<\/div>" +
-      "<div class=\"vjs-share-options-input-row\">" +
-      "<div class=\"vjs-share-options-embed-container\">" +
-      "<div class=\"vjs-share-options-container-section-title\">Embed Code:<\/div>" +
-      "<div class=\"vjs-share-options-embed-input\">Embed Code Here<\/div>" +
-      "<div class=\"vjs-share-clipboard-container-embed-code\"></div>" +
-      "<\/div><\/div><\/div><\/div><\/div>";
+  return '<div class="vjs-share-options-container">' +
+      '<div class="vjs-share-options-container-asset-title">Share Video:<\/div>' +
+      '<div class="vjs-share-options-container-social-container">' +
+      '<div class="vjs-share-options-container-section-title">Share via:<\/div>' +
+      '<div class="vjs-share-options-container-social-icon-container">' +
+      '<span class="fa-stack fa-lg">' +
+      '<i class="fa fa-square fa-2x vjs-share-options-container-social-icon-fb"><\/i>' +
+      '<i class="fa fa-facebook fa-stack-1x vjs-share-options-container-social-icon"><\/i>' +
+      '<\/span>' +
+      '<span class="fa-stack fa-lg">' +
+      '<i class="fa fa-square fa-2x vjs-share-options-container-social-icon-gp"><\/i>' +
+      '<i class="fa fa-google-plus fa-stack-1x vjs-share-options-container-social-icon"><\/i>' +
+      '<\/span>' +
+      '<span class="fa-stack fa-lg">' +
+      '<i class="fa fa-square fa-2x vjs-share-options-container-social-icon-tw"><\/i>' +
+      '<i class="fa fa-twitter fa-stack-1x vjs-share-options-container-social-icon"><\/i>' +
+      '<\/span>' +
+      '<span class="fa-stack fa-lg">' +
+      '<i class="fa fa-square fa-2x vjs-share-options-container-social-icon-tu"><\/i>' +
+      '<i class="fa fa-tumblr fa-stack-1x vjs-share-options-container-social-icon"><\/i>' +
+      '<\/span>' +
+      '<span class="fa-stack fa-lg">' +
+      '<i class="fa fa-square fa-2x vjs-share-options-container-social-icon-pt"><\/i>' +
+      '<i class="fa fa-pinterest fa-stack-1x vjs-share-options-container-social-icon"><\/i>' +
+      '<\/span>' +
+      '<span class="fa-stack fa-lg">' +
+      '<i class="fa fa-square fa-2x vjs-share-options-container-social-icon-in"><\/i>' +
+      '<i class="fa fa-linkedin fa-stack-1x vjs-share-options-container-social-icon"><\/i>' +
+      '<\/span>' +
+      '<\/div>' +
+      '<br style="clear: both">' +
+      '<div class="vjs-share-options-input-row">' +
+      '<div class="vjs-share-options-direct-link-container">' +
+      '<div class="vjs-share-options-container-section-title">Direct Link:<\/div>' +
+      '<div class="vjs-share-options-direct-link-input">Direct Link<\/div>' +
+      '<div class="vjs-share-clipboard-container-direct-link"></div>' +
+      '<\/div>' +
+      '<div class="vjs-share-options-start-time-container">' +
+      '<div class="vjs-share-options-container-section-title">Start Time:<\/div>' +
+      '<div class="vjs-share-options-start-time-input">00:00<\/div>' +
+      '<\/div>' +
+      '<div class="vjs-share-options-input-row">' +
+      '<div class="vjs-share-options-embed-container">' +
+      '<div class="vjs-share-options-container-section-title">Embed Code:<\/div>' +
+      '<div class="vjs-share-options-embed-input">Embed Code Here<\/div>' +
+      '<div class="vjs-share-clipboard-container-embed-code"></div>' +
+      '<\/div><\/div><\/div><\/div><\/div>';
 };
 
 var createClipboardSWF = function (url, className, elementId, playerId) {
@@ -101,11 +104,11 @@ var createClipboardSWF = function (url, className, elementId, playerId) {
 };
 
 var createLinkIcon = function (object) {
-  return "<a target=\"_blank\" href=\""+ object.url.toLowerCase() +"\">" +
-  "<span class=\"fa-stack fa-lg\">" +
-  "<i class=\"fa fa-square fa-2x "+ object.backgroundClass + "\"><\/i>" +
-  "<i class=\"fa fa-"+object.name.toLowerCase()+" fa-stack-1x vjs-share-options-container-social-icon\"><\/i>" +
-  "<\/span></a>";
+  return '<a target="_blank" href="'+ object.url.toLowerCase() +'">' +
+  '<span class="fa-stack fa-lg">' +
+  '<i class="fa fa-square fa-2x '+ object.backgroundClass + '"><\/i>' +
+  '<i class="fa fa-'+object.name.toLowerCase()+' fa-stack-1x vjs-share-options-container-social-icon"><\/i>' +
+  '<\/span></a>';
 };
 
 videojs.ShareOverlay.prototype.createEl = function() {
@@ -113,7 +116,7 @@ videojs.ShareOverlay.prototype.createEl = function() {
   this.el().innerHTML = createShareOverlayContainer();
   this.addClass('vjs-share-overlay');
 
-  this.closeButton = new videojs.Component(player);
+  this.closeButton = new videojs.Component(this.player());
   this.closeButton.createEl();
   this.closeButton.addClass('fa fa-times fa-2x vjs-share-options-container-close-icon white');
   this.closeButton.on('click', this.onCloseButtonClick);
@@ -127,9 +130,9 @@ videojs.ShareOverlay.prototype.createEl = function() {
   this.embedCodeElement = this.overlayContainer.querySelector('.vjs-share-options-embed-input');
   this.embedCodeElement.addEventListener('click', this.onEmbedCodeClick);
   this.directLinkSWFContainer = this.overlayContainer.querySelector('.vjs-share-clipboard-container-direct-link');
-  this.directLinkSWFContainer.innerHTML = createClipboardSWF(videojs.share.swf, 'vjs-clipboard-swf-direct-link', 'vjs-share-clipboard-api-direct-link', player.el().id);
+  this.directLinkSWFContainer.innerHTML = createClipboardSWF(videojs.share.swf, 'vjs-clipboard-swf-direct-link', 'vjs-share-clipboard-api-direct-link', this.player().el().id);
   this.embedCodeSWFContainer = this.overlayContainer.querySelector('.vjs-share-clipboard-container-embed-code');
-  this.embedCodeSWFContainer.innerHTML = createClipboardSWF(videojs.share.swf, 'vjs-clipboard-swf-embed-code', 'vjs-share-clipboard-api-embed-code', player.el().id);
+  this.embedCodeSWFContainer.innerHTML = createClipboardSWF(videojs.share.swf, 'vjs-clipboard-swf-embed-code', 'vjs-share-clipboard-api-embed-code', this.player().el().id);
   this.socialIconContainer = this.overlayContainer.querySelector('.vjs-share-options-container-social-icon-container');
 
   videojs.share.clipboardAPI = {};
@@ -140,15 +143,16 @@ videojs.ShareOverlay.prototype.createEl = function() {
 };
 
 videojs.ShareOverlay.prototype.setDetails = function(details) {
+  var i;
   if(!details) {
     details = videojs.share.defaults;
   }
   this.title(details.title);
   this.directLink(details.directLink);
   this.embedCode(details.embedCode);
-  this.startTime(player.currentTime());
+  this.startTime(this.player().currentTime());
 
-  this.socialIconContainer.innerHTML = "";
+  this.socialIconContainer.innerHTML = '';
 
   for (i in details.networks) {
     this.socialIconContainer.innerHTML += createLinkIcon(details.networks[i]);
@@ -157,7 +161,7 @@ videojs.ShareOverlay.prototype.setDetails = function(details) {
 
 videojs.ShareOverlay.prototype.title = function(title) {
   if(title) {
-    this.titleElement.innerHTML = "Share Video: " + title;
+    this.titleElement.innerHTML = 'Share Video: ' + title;
   }
   return this.titleElement.innerHTML.substr(13);
 };
@@ -227,7 +231,7 @@ videojs.ShareOverlay.prototype.onHideShareOverlay = function() {
  * Event handler for close button click
  */
 videojs.ShareOverlay.prototype.onCloseButtonClick = function() {
-  player.trigger('hideshareoverlay');
+  this.player().trigger('hideshareoverlay');
 };
 
 /**
@@ -267,3 +271,4 @@ videojs.ShareOverlay.prototype.formatTime = function(seconds, guide) {
 
   return h + m + s;
 };
+})(window.videojs);

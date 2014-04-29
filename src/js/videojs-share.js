@@ -1,4 +1,5 @@
-(function(window,videojs,document,undefined) {
+(function(window, videojs, undefined) {
+  'use strict';
   videojs.share = {
     swf: 'src/swf/clipboard.swf',
     defaults: {
@@ -35,7 +36,7 @@
       return function() {
         this.share = initialize();
         init.apply(this, arguments);
-      }
+      };
     };
     initialize().apply(this, arguments);
   });

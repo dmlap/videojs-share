@@ -1,5 +1,8 @@
 /* Share Control Bar Button
  ================================================================================ */
+(function(videojs) {
+'use strict';
+
 videojs.ShareButton = videojs.Component.extend({
   init: function(player, options) {
 
@@ -15,6 +18,7 @@ videojs.ShareButton = videojs.Component.extend({
 });
 
 videojs.ShareButton.prototype.onClick = function() {
-  player.trigger('showshareoverlay');
+  this.player().trigger('showshareoverlay');
 };
 
+})(window.videojs);
